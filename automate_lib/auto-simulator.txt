@@ -1,0 +1,138 @@
+INFO:root:Windows => Width: 1680, Height: 1050
+INFO:root:Office init function => Starting Office Class....
+INFO:root:found_window: 6227014
+
+INFO:root:found_window: 6227014
+
+INFO:root:Office start function => Information: {'isunicode': True, 'userdata': 0, 'style': 1174405120, 'parent': 6227014, 'processid': 3420, 'text': u'UIRibbonDockLeft', 'isenabled': True, 'classname': u'UIRibbonCommandBarDock', 'clientrect': <RECT L0, T0, R0, B871>, 'contexthelpid': 0, 'exstyle': 1048576, 'isvisible': False, 'controlid': 0, 'font': <LOGFONTW 'MS Shell Dlg' -11>, 'children': [], 'rectangle': <RECT L0, T139, R0, B1010>}
+INFO:root:Office start function => Information: {'isunicode': True, 'userdata': 0, 'style': 1174405120, 'parent': 6227014, 'processid': 3420, 'text': u'UIRibbonDockRight', 'isenabled': True, 'classname': u'UIRibbonCommandBarDock', 'clientrect': <RECT L0, T0, R0, B871>, 'contexthelpid': 0, 'exstyle': 1048576, 'isvisible': False, 'controlid': 0, 'font': <LOGFONTW 'MS Shell Dlg' -11>, 'children': [], 'rectangle': <RECT L1680, T139, R1680, B1010>}
+INFO:root:Office start function => Information: {'isunicode': True, 'userdata': 0, 'style': 1442840576, 'parent': 6227014, 'processid': 3420, 'text': u'UIRibbonDockTop', 'isenabled': True, 'classname': u'UIRibbonCommandBarDock', 'clientrect': <RECT L0, T0, R1680, B116>, 'contexthelpid': 0, 'exstyle': 1048576, 'isvisible': True, 'controlid': 0, 'font': <LOGFONTW 'MS Shell Dlg' -11>, 'children': [2558106, 5703674, 1509674, 16385328, 8192738, 1313054], 'rectangle': <RECT L0, T23, R1680, B139>}
+INFO:root:Office start function => Information: {'isunicode': True, 'userdata': 0, 'style': 1442840576, 'parent': 4327560, 'processid': 3420, 'text': u'Ribbon', 'isenabled': True, 'classname': u'UIRibbonCommandBar', 'clientrect': <RECT L0, T0, R1680, B116>, 'contexthelpid': 0, 'exstyle': 1048576, 'isvisible': True, 'controlid': 0, 'font': <LOGFONTW 'MS Shell Dlg' -11>, 'children': [5703674, 1509674, 16385328, 8192738, 1313054], 'rectangle': <RECT L0, T23, R1680, B139>}
+INFO:root:Office start function => Information: {'isunicode': True, 'userdata': 0, 'style': 1442840576, 'parent': 2558106, 'processid': 3420, 'text': u'Ribbon', 'isenabled': True, 'classname': u'UIRibbonWorkPane', 'clientrect': <RECT L0, T0, R1680, B116>, 'contexthelpid': 0, 'exstyle': 1048576, 'isvisible': True, 'controlid': 0, 'font': <LOGFONTW 'MS Shell Dlg' -11>, 'children': [1509674, 16385328, 8192738, 1313054], 'rectangle': <RECT L0, T23, R1680, B139>}
+INFO:root:Office start function => Information: {'isunicode': True, 'userdata': -1994081024, 'style': 1375731712, 'parent': 5703674, 'processid': 3420, 'text': '', 'isenabled': True, 'classname': u'NUIPane', 'clientrect': <RECT L0, T0, R1680, B147>, 'contexthelpid': 0, 'exstyle': 1048576, 'isvisible': True, 'controlid': 0, 'font': <LOGFONTW 'MS Shell Dlg' -11>, 'children': [16385328, 8192738, 1313054], 'rectangle': <RECT L0, T23, R1680, B170>}
+INFO:root:Office start function => Information: {'isunicode': True, 'userdata': -1994019520, 'style': 1443037184, 'parent': 1509674, 'processid': 3420, 'text': '', 'isenabled': True, 'classname': u'NetUIHWND', 'clientrect': <RECT L0, T0, R1680, B147>, 'contexthelpid': 0, 'exstyle': 0, 'isvisible': True, 'controlid': 0, 'font': <LOGFONTW 'MS Shell Dlg' -11>, 'children': [8192738, 1313054], 'rectangle': <RECT L0, T-8, R1680, B139>}
+INFO:root:Office start function => Information: {'isunicode': True, 'userdata': 0, 'style': 1174405120, 'parent': 16385328, 'processid': 3420, 'text': '', 'isenabled': True, 'classname': u'NetUICtrlNotifySink', 'clientrect': <RECT L0, T0, R0, B0>, 'contexthelpid': 0, 'exstyle': 0, 'isvisible': False, 'controlid': 0, 'font': <LOGFONTW 'MS Shell Dlg' -11>, 'children': [], 'rectangle': <RECT L0, T-8, R0, B-8>}
+INFO:root:Office start function => Information: {'isunicode': True, 'userdata': 0, 'style': 1174405120, 'parent': 16385328, 'processid': 3420, 'text': '', 'isenabled': True, 'classname': u'NetUICtrlNotifySink', 'clientrect': <RECT L0, T0, R0, B0>, 'contexthelpid': 0, 'exstyle': 0, 'isvisible': False, 'controlid': 0, 'font': <LOGFONTW 'MS Shell Dlg' -11>, 'children': [], 'rectangle': <RECT L0, T-8, R0, B-8>}
+INFO:root:Office start function => Information: {'isunicode': True, 'userdata': 0, 'style': 1174405120, 'parent': 6227014, 'processid': 3420, 'text': u'UIRibbonDockBottom', 'isenabled': True, 'classname': u'UIRibbonCommandBarDock', 'clientrect': <RECT L0, T0, R1680, B0>, 'contexthelpid': 0, 'exstyle': 1048576, 'isvisible': False, 'controlid': 0, 'font': <LOGFONTW 'MS Shell Dlg' -11>, 'children': [], 'rectangle': <RECT L0, T1010, R1680, B1010>}
+INFO:root:Office start function => Information: {'isunicode': True, 'userdata': 0, 'style': 1543514120, 'parent': 6227014, 'processid': 3420, 'text': '', 'isenabled': False, 'classname': u'Afx:00007FF6572A0000:0:0000000000010003:0000000000000010:0000000000000000', 'clientrect': <RECT L0, T0, R1680, B147>, 'contexthelpid': 0, 'exstyle': 0, 'isvisible': True, 'controlid': 8000, 'font': <LOGFONTW 'MS Shell Dlg' -11>, 'children': [], 'rectangle': <RECT L0, T-8, R1680, B139>}
+INFO:root:Office start function => Information: {'isunicode': True, 'userdata': 0, 'style': 1409286478, 'parent': 6227014, 'processid': 3420, 'text': '', 'isenabled': True, 'classname': u'msctls_statusbar32', 'clientrect': <RECT L0, T0, R1680, B26>, 'contexthelpid': 0, 'exstyle': 0, 'isvisible': True, 'controlid': 59393, 'font': <LOGFONTW 'Segoe UI' -12>, 'children': [13697968, 236258642, 1706190, 18679340, 2427076, 1771772], 'rectangle': <RECT L0, T984, R1680, B1010>}
+INFO:root:Office start function => Information: {'isunicode': True, 'userdata': 0, 'style': 1342242816, 'parent': 3672184, 'processid': 3420, 'text': '', 'isenabled': True, 'classname': u'Afx:00007FF6572A0000:0', 'clientrect': <RECT L0, T0, R190, B22>, 'contexthelpid': 0, 'exstyle': 0, 'isvisible': True, 'controlid': 53249, 'font': <LOGFONTW 'MS Shell Dlg' -11>, 'children': [236258642, 1706190, 18679340, 2427076, 1771772], 'rectangle': <RECT L1489, T987, R1679, B1009>}
+INFO:root:Office start function => Information: {'isunicode': True, 'userdata': 0, 'style': 1073741824, 'parent': 13697968, 'processid': 3420, 'text': u'Zoo&m', 'isenabled': True, 'classname': u'Static', 'clientrect': <RECT L0, T0, R65535, B0>, 'contexthelpid': 0, 'exstyle': 0, 'isvisible': False, 'controlid': 53250, 'font': <LOGFONTW 'MS Shell Dlg' -11>, 'children': [], 'rectangle': <RECT L-31334, T1240, R34201, B1240>}
+INFO:root:Office start function => Information: {'isunicode': True, 'userdata': 0, 'style': 1342177794, 'parent': 13697968, 'processid': 3420, 'text': u'100%', 'isenabled': True, 'classname': u'Static', 'clientrect': <RECT L0, T0, R40, B22>, 'contexthelpid': 0, 'exstyle': 0, 'isvisible': True, 'controlid': 53251, 'font': <LOGFONTW 'Segoe UI' -12>, 'children': [], 'rectangle': <RECT L1491, T987, R1531, B1009>}
+INFO:root:Office start function => Information: {'isunicode': True, 'userdata': 0, 'style': 1342242827, 'parent': 13697968, 'processid': 3420, 'text': u'-', 'isenabled': True, 'classname': u'Button', 'clientrect': <RECT L0, T0, R22, B22>, 'contexthelpid': 0, 'exstyle': 0, 'isvisible': True, 'controlid': 53252, 'font': <LOGFONTW 'MS Shell Dlg' -11>, 'children': [], 'rectangle': <RECT L1535, T987, R1557, B1009>}
+INFO:root:Office start function => Information: {'isunicode': True, 'userdata': 0, 'style': 1342243856, 'parent': 13697968, 'processid': 3420, 'text': '', 'isenabled': True, 'classname': u'msctls_trackbar32', 'clientrect': <RECT L0, T0, R100, B22>, 'contexthelpid': 0, 'exstyle': 0, 'isvisible': True, 'controlid': 53254, 'font': <LOGFONTW 'MS Shell Dlg' -11>, 'children': [], 'rectangle': <RECT L1557, T987, R1657, B1009>}
+INFO:root:Office start function => Information: {'isunicode': True, 'userdata': 0, 'style': 1342242827, 'parent': 13697968, 'processid': 3420, 'text': u'+', 'isenabled': True, 'classname': u'Button', 'clientrect': <RECT L0, T0, R22, B22>, 'contexthelpid': 0, 'exstyle': 0, 'isvisible': True, 'controlid': 53253, 'font': <LOGFONTW 'MS Shell Dlg' -11>, 'children': [], 'rectangle': <RECT L1657, T987, R1679, B1009>}
+INFO:root:Office start function => Information: {'isunicode': True, 'userdata': 0, 'style': 1442850816, 'parent': 6227014, 'processid': 3420, 'text': '', 'isenabled': True, 'classname': u'AfxControlBar42u', 'clientrect': <RECT L0, T0, R1680, B-2>, 'contexthelpid': 0, 'exstyle': 0, 'isvisible': True, 'controlid': 59419, 'font': <LOGFONTW 'MS Shell Dlg' -11>, 'children': [], 'rectangle': <RECT L0, T139, R1680, B139>}
+INFO:root:Office start function => Information: {'isunicode': True, 'userdata': 0, 'style': 1442873856, 'parent': 6227014, 'processid': 3420, 'text': '', 'isenabled': True, 'classname': u'AfxControlBar42u', 'clientrect': <RECT L0, T0, R1680, B-2>, 'contexthelpid': 0, 'exstyle': 0, 'isvisible': True, 'controlid': 59422, 'font': <LOGFONTW 'MS Shell Dlg' -11>, 'children': [], 'rectangle': <RECT L0, T984, R1680, B984>}
+INFO:root:Office start function => Information: {'isunicode': True, 'userdata': 0, 'style': 1442845696, 'parent': 6227014, 'processid': 3420, 'text': '', 'isenabled': True, 'classname': u'AfxControlBar42u', 'clientrect': <RECT L0, T0, R0, B841>, 'contexthelpid': 0, 'exstyle': 0, 'isvisible': True, 'controlid': 59420, 'font': <LOGFONTW 'MS Shell Dlg' -11>, 'children': [], 'rectangle': <RECT L0, T139, R0, B984>}
+INFO:root:Office start function => Information: {'isunicode': True, 'userdata': 0, 'style': 1442857216, 'parent': 6227014, 'processid': 3420, 'text': '', 'isenabled': True, 'classname': u'AfxControlBar42u', 'clientrect': <RECT L0, T0, R0, B841>, 'contexthelpid': 0, 'exstyle': 0, 'isvisible': True, 'controlid': 59421, 'font': <LOGFONTW 'MS Shell Dlg' -11>, 'children': [], 'rectangle': <RECT L1680, T139, R1680, B984>}
+INFO:root:Office start function => Information: {'isunicode': True, 'userdata': 0, 'style': 1409296392, 'parent': 6227014, 'processid': 3420, 'text': '', 'isenabled': True, 'classname': u'Afx:00007FF6572A0000:0:0000000000010003:0000000000000010:0000000000000000', 'clientrect': <RECT L0, T0, R1680, B29>, 'contexthelpid': 0, 'exstyle': 0, 'isvisible': True, 'controlid': 59397, 'font': <LOGFONTW 'MS Shell Dlg' -11>, 'children': [], 'rectangle': <RECT L0, T139, R1680, B168>}
+INFO:root:Office start function => Information: {'isunicode': True, 'userdata': 0, 'style': 1426096580, 'parent': 6227014, 'processid': 3420, 'text': u'\r\n', 'isenabled': True, 'classname': u'RICHEDIT50W', 'clientrect': <RECT L0, T0, R1680, B816>, 'contexthelpid': 0, 'exstyle': 16, 'isvisible': True, 'controlid': 59648, 'font': <LOGFONTW 'MS Shell Dlg' -11>, 'children': [], 'rectangle': <RECT L0, T168, R1680, B984>}
+INFO:root:Office start function => Information: {'isunicode': True, 'userdata': 0, 'style': 1174405120, 'parent': 6227014, 'processid': 3420, 'text': u'UIRibbonWorkPane', 'isenabled': True, 'classname': u'UIRibbonWorkPane', 'clientrect': <RECT L0, T0, R100, B100>, 'contexthelpid': 0, 'exstyle': 1048576, 'isvisible': False, 'controlid': 0, 'font': <LOGFONTW 'MS Shell Dlg' -11>, 'children': [], 'rectangle': <RECT L0, T-8, R100, B92>}
+INFO:root:Office Write_letters function => write letters.
+
+INFO:root:scrolling: 0 times
+
+INFO:root:scrolling: 1 times
+
+INFO:root:scrolling: 2 times
+
+INFO:root:scrolling: 3 times
+
+INFO:root:scrolling: 0 times
+
+INFO:root:scrolling: 1 times
+
+INFO:root:scrolling: 2 times
+
+INFO:root:scrolling: 3 times
+
+INFO:root:scrolling: 0 times
+
+INFO:root:scrolling: 1 times
+
+INFO:root:scrolling: 2 times
+
+INFO:root:scrolling: 3 times
+
+INFO:root:scrolling: 0 times
+
+INFO:root:scrolling: 1 times
+
+INFO:root:scrolling: 2 times
+
+INFO:root:scrolling: 3 times
+
+INFO:root:found_window: 3672086
+
+INFO:root:Windows => Width: 1680, Height: 1050
+INFO:root:Office init function => Starting Office Class....
+INFO:root:found_window: 6162284
+
+INFO:root:found_window: 6162284
+
+INFO:root:Office start function => Information: {'isunicode': True, 'userdata': 0, 'style': 1174405120, 'parent': 6162284, 'processid': 5056, 'text': u'UIRibbonDockLeft', 'isenabled': True, 'classname': u'UIRibbonCommandBarDock', 'clientrect': <RECT L0, T0, R0, B871>, 'contexthelpid': 0, 'exstyle': 1048576, 'isvisible': False, 'controlid': 0, 'font': <LOGFONTW 'MS Shell Dlg' -11>, 'children': [], 'rectangle': <RECT L0, T139, R0, B1010>}
+INFO:root:Office start function => Information: {'isunicode': True, 'userdata': 0, 'style': 1174405120, 'parent': 6162284, 'processid': 5056, 'text': u'UIRibbonDockRight', 'isenabled': True, 'classname': u'UIRibbonCommandBarDock', 'clientrect': <RECT L0, T0, R0, B871>, 'contexthelpid': 0, 'exstyle': 1048576, 'isvisible': False, 'controlid': 0, 'font': <LOGFONTW 'MS Shell Dlg' -11>, 'children': [], 'rectangle': <RECT L1680, T139, R1680, B1010>}
+INFO:root:Office start function => Information: {'isunicode': True, 'userdata': 0, 'style': 1442840576, 'parent': 6162284, 'processid': 5056, 'text': u'UIRibbonDockTop', 'isenabled': True, 'classname': u'UIRibbonCommandBarDock', 'clientrect': <RECT L0, T0, R1680, B116>, 'contexthelpid': 0, 'exstyle': 1048576, 'isvisible': True, 'controlid': 0, 'font': <LOGFONTW 'MS Shell Dlg' -11>, 'children': [16450864, 4589686, 236324178, 1050948, 1378590, 8258274], 'rectangle': <RECT L0, T23, R1680, B139>}
+INFO:root:Office start function => Information: {'isunicode': True, 'userdata': 0, 'style': 1442840576, 'parent': 2623642, 'processid': 5056, 'text': u'Ribbon', 'isenabled': True, 'classname': u'UIRibbonCommandBar', 'clientrect': <RECT L0, T0, R1680, B116>, 'contexthelpid': 0, 'exstyle': 1048576, 'isvisible': True, 'controlid': 0, 'font': <LOGFONTW 'MS Shell Dlg' -11>, 'children': [4589686, 236324178, 1050948, 1378590, 8258274], 'rectangle': <RECT L0, T23, R1680, B139>}
+INFO:root:Office start function => Information: {'isunicode': True, 'userdata': 0, 'style': 1442840576, 'parent': 16450864, 'processid': 5056, 'text': u'Ribbon', 'isenabled': True, 'classname': u'UIRibbonWorkPane', 'clientrect': <RECT L0, T0, R1680, B116>, 'contexthelpid': 0, 'exstyle': 1048576, 'isvisible': True, 'controlid': 0, 'font': <LOGFONTW 'MS Shell Dlg' -11>, 'children': [236324178, 1050948, 1378590, 8258274], 'rectangle': <RECT L0, T23, R1680, B139>}
+INFO:root:Office start function => Information: {'isunicode': True, 'userdata': 941585264, 'style': 1375731712, 'parent': 4589686, 'processid': 5056, 'text': '', 'isenabled': True, 'classname': u'NUIPane', 'clientrect': <RECT L0, T0, R1680, B147>, 'contexthelpid': 0, 'exstyle': 1048576, 'isvisible': True, 'controlid': 0, 'font': <LOGFONTW 'MS Shell Dlg' -11>, 'children': [1050948, 1378590, 8258274], 'rectangle': <RECT L0, T23, R1680, B170>}
+INFO:root:Office start function => Information: {'isunicode': True, 'userdata': 941652416, 'style': 1443037184, 'parent': 236324178, 'processid': 5056, 'text': '', 'isenabled': True, 'classname': u'NetUIHWND', 'clientrect': <RECT L0, T0, R1680, B147>, 'contexthelpid': 0, 'exstyle': 0, 'isvisible': True, 'controlid': 0, 'font': <LOGFONTW 'MS Shell Dlg' -11>, 'children': [1378590, 8258274], 'rectangle': <RECT L0, T-8, R1680, B139>}
+INFO:root:Office start function => Information: {'isunicode': True, 'userdata': 0, 'style': 1174405120, 'parent': 1050948, 'processid': 5056, 'text': '', 'isenabled': True, 'classname': u'NetUICtrlNotifySink', 'clientrect': <RECT L0, T0, R0, B0>, 'contexthelpid': 0, 'exstyle': 0, 'isvisible': False, 'controlid': 0, 'font': <LOGFONTW 'MS Shell Dlg' -11>, 'children': [], 'rectangle': <RECT L0, T-8, R0, B-8>}
+INFO:root:Office start function => Information: {'isunicode': True, 'userdata': 0, 'style': 1174405120, 'parent': 1050948, 'processid': 5056, 'text': '', 'isenabled': True, 'classname': u'NetUICtrlNotifySink', 'clientrect': <RECT L0, T0, R0, B0>, 'contexthelpid': 0, 'exstyle': 0, 'isvisible': False, 'controlid': 0, 'font': <LOGFONTW 'MS Shell Dlg' -11>, 'children': [], 'rectangle': <RECT L0, T-8, R0, B-8>}
+INFO:root:Office start function => Information: {'isunicode': True, 'userdata': 0, 'style': 1174405120, 'parent': 6162284, 'processid': 5056, 'text': u'UIRibbonDockBottom', 'isenabled': True, 'classname': u'UIRibbonCommandBarDock', 'clientrect': <RECT L0, T0, R1680, B0>, 'contexthelpid': 0, 'exstyle': 1048576, 'isvisible': False, 'controlid': 0, 'font': <LOGFONTW 'MS Shell Dlg' -11>, 'children': [], 'rectangle': <RECT L0, T1010, R1680, B1010>}
+INFO:root:Office start function => Information: {'isunicode': True, 'userdata': 0, 'style': 1543514120, 'parent': 6162284, 'processid': 5056, 'text': '', 'isenabled': False, 'classname': u'Afx:00007FF6572A0000:0:0000000000010003:0000000000000010:0000000000000000', 'clientrect': <RECT L0, T0, R1680, B147>, 'contexthelpid': 0, 'exstyle': 0, 'isvisible': True, 'controlid': 8000, 'font': <LOGFONTW 'MS Shell Dlg' -11>, 'children': [], 'rectangle': <RECT L0, T-8, R1680, B139>}
+INFO:root:Office start function => Information: {'isunicode': True, 'userdata': 0, 'style': 1409286478, 'parent': 6162284, 'processid': 5056, 'text': '', 'isenabled': True, 'classname': u'msctls_statusbar32', 'clientrect': <RECT L0, T0, R1680, B26>, 'contexthelpid': 0, 'exstyle': 0, 'isvisible': True, 'controlid': 59393, 'font': <LOGFONTW 'Segoe UI' -12>, 'children': [6293370, 36373734, 9504692, 6292550, 5703812, 4589158], 'rectangle': <RECT L0, T984, R1680, B1010>}
+INFO:root:Office start function => Information: {'isunicode': True, 'userdata': 0, 'style': 1342242816, 'parent': 2033826, 'processid': 5056, 'text': '', 'isenabled': True, 'classname': u'Afx:00007FF6572A0000:0', 'clientrect': <RECT L0, T0, R190, B22>, 'contexthelpid': 0, 'exstyle': 0, 'isvisible': True, 'controlid': 53249, 'font': <LOGFONTW 'MS Shell Dlg' -11>, 'children': [36373734, 9504692, 6292550, 5703812, 4589158], 'rectangle': <RECT L1489, T987, R1679, B1009>}
+INFO:root:Office start function => Information: {'isunicode': True, 'userdata': 0, 'style': 1073741824, 'parent': 6293370, 'processid': 5056, 'text': u'Zoo&m', 'isenabled': True, 'classname': u'Static', 'clientrect': <RECT L0, T0, R0, B0>, 'contexthelpid': 0, 'exstyle': 0, 'isvisible': False, 'controlid': 53250, 'font': <LOGFONTW 'MS Shell Dlg' -11>, 'children': [], 'rectangle': <RECT L34201, T1134, R34201, B1134>}
+INFO:root:Office start function => Information: {'isunicode': True, 'userdata': 0, 'style': 1342177794, 'parent': 6293370, 'processid': 5056, 'text': u'100%', 'isenabled': True, 'classname': u'Static', 'clientrect': <RECT L0, T0, R40, B22>, 'contexthelpid': 0, 'exstyle': 0, 'isvisible': True, 'controlid': 53251, 'font': <LOGFONTW 'Segoe UI' -12>, 'children': [], 'rectangle': <RECT L1491, T987, R1531, B1009>}
+INFO:root:Office start function => Information: {'isunicode': True, 'userdata': 0, 'style': 1342242827, 'parent': 6293370, 'processid': 5056, 'text': u'-', 'isenabled': True, 'classname': u'Button', 'clientrect': <RECT L0, T0, R22, B22>, 'contexthelpid': 0, 'exstyle': 0, 'isvisible': True, 'controlid': 53252, 'font': <LOGFONTW 'MS Shell Dlg' -11>, 'children': [], 'rectangle': <RECT L1535, T987, R1557, B1009>}
+INFO:root:Office start function => Information: {'isunicode': True, 'userdata': 0, 'style': 1342243856, 'parent': 6293370, 'processid': 5056, 'text': '', 'isenabled': True, 'classname': u'msctls_trackbar32', 'clientrect': <RECT L0, T0, R100, B22>, 'contexthelpid': 0, 'exstyle': 0, 'isvisible': True, 'controlid': 53254, 'font': <LOGFONTW 'MS Shell Dlg' -11>, 'children': [], 'rectangle': <RECT L1557, T987, R1657, B1009>}
+INFO:root:Office start function => Information: {'isunicode': True, 'userdata': 0, 'style': 1342242827, 'parent': 6293370, 'processid': 5056, 'text': u'+', 'isenabled': True, 'classname': u'Button', 'clientrect': <RECT L0, T0, R22, B22>, 'contexthelpid': 0, 'exstyle': 0, 'isvisible': True, 'controlid': 53253, 'font': <LOGFONTW 'MS Shell Dlg' -11>, 'children': [], 'rectangle': <RECT L1657, T987, R1679, B1009>}
+INFO:root:Office start function => Information: {'isunicode': True, 'userdata': 0, 'style': 1442850816, 'parent': 6162284, 'processid': 5056, 'text': '', 'isenabled': True, 'classname': u'AfxControlBar42u', 'clientrect': <RECT L0, T0, R1680, B-2>, 'contexthelpid': 0, 'exstyle': 0, 'isvisible': True, 'controlid': 59419, 'font': <LOGFONTW 'MS Shell Dlg' -11>, 'children': [], 'rectangle': <RECT L0, T139, R1680, B139>}
+INFO:root:Office start function => Information: {'isunicode': True, 'userdata': 0, 'style': 1442873856, 'parent': 6162284, 'processid': 5056, 'text': '', 'isenabled': True, 'classname': u'AfxControlBar42u', 'clientrect': <RECT L0, T0, R1680, B-2>, 'contexthelpid': 0, 'exstyle': 0, 'isvisible': True, 'controlid': 59422, 'font': <LOGFONTW 'MS Shell Dlg' -11>, 'children': [], 'rectangle': <RECT L0, T984, R1680, B984>}
+INFO:root:Office start function => Information: {'isunicode': True, 'userdata': 0, 'style': 1442845696, 'parent': 6162284, 'processid': 5056, 'text': '', 'isenabled': True, 'classname': u'AfxControlBar42u', 'clientrect': <RECT L0, T0, R0, B841>, 'contexthelpid': 0, 'exstyle': 0, 'isvisible': True, 'controlid': 59420, 'font': <LOGFONTW 'MS Shell Dlg' -11>, 'children': [], 'rectangle': <RECT L0, T139, R0, B984>}
+INFO:root:Office start function => Information: {'isunicode': True, 'userdata': 0, 'style': 1442857216, 'parent': 6162284, 'processid': 5056, 'text': '', 'isenabled': True, 'classname': u'AfxControlBar42u', 'clientrect': <RECT L0, T0, R0, B841>, 'contexthelpid': 0, 'exstyle': 0, 'isvisible': True, 'controlid': 59421, 'font': <LOGFONTW 'MS Shell Dlg' -11>, 'children': [], 'rectangle': <RECT L1680, T139, R1680, B984>}
+INFO:root:Office start function => Information: {'isunicode': True, 'userdata': 0, 'style': 1409296392, 'parent': 6162284, 'processid': 5056, 'text': '', 'isenabled': True, 'classname': u'Afx:00007FF6572A0000:0:0000000000010003:0000000000000010:0000000000000000', 'clientrect': <RECT L0, T0, R1680, B29>, 'contexthelpid': 0, 'exstyle': 0, 'isvisible': True, 'controlid': 59397, 'font': <LOGFONTW 'MS Shell Dlg' -11>, 'children': [], 'rectangle': <RECT L0, T139, R1680, B168>}
+INFO:root:Office start function => Information: {'isunicode': True, 'userdata': 0, 'style': 1426096580, 'parent': 6162284, 'processid': 5056, 'text': u'\r\n', 'isenabled': True, 'classname': u'RICHEDIT50W', 'clientrect': <RECT L0, T0, R1680, B816>, 'contexthelpid': 0, 'exstyle': 16, 'isvisible': True, 'controlid': 59648, 'font': <LOGFONTW 'MS Shell Dlg' -11>, 'children': [], 'rectangle': <RECT L0, T168, R1680, B984>}
+INFO:root:Office start function => Information: {'isunicode': True, 'userdata': 0, 'style': 1174405120, 'parent': 6162284, 'processid': 5056, 'text': u'UIRibbonWorkPane', 'isenabled': True, 'classname': u'UIRibbonWorkPane', 'clientrect': <RECT L0, T0, R100, B100>, 'contexthelpid': 0, 'exstyle': 1048576, 'isvisible': False, 'controlid': 0, 'font': <LOGFONTW 'MS Shell Dlg' -11>, 'children': [], 'rectangle': <RECT L0, T-8, R100, B92>}
+INFO:root:Office Write_letters function => write letters.
+
+INFO:root:scrolling: 0 times
+
+INFO:root:scrolling: 1 times
+
+INFO:root:scrolling: 2 times
+
+INFO:root:scrolling: 3 times
+
+INFO:root:scrolling: 0 times
+
+INFO:root:scrolling: 1 times
+
+INFO:root:scrolling: 2 times
+
+INFO:root:scrolling: 3 times
+
+INFO:root:scrolling: 0 times
+
+INFO:root:scrolling: 1 times
+
+INFO:root:scrolling: 2 times
+
+INFO:root:scrolling: 3 times
+
+INFO:root:scrolling: 0 times
+
+INFO:root:scrolling: 1 times
+
+INFO:root:scrolling: 2 times
+
+INFO:root:scrolling: 3 times
+
+INFO:root:found_window: 1116440
+
+INFO:root:Windows => Width: 1680, Height: 1050
+INFO:root:Windows => Width: 1680, Height: 1050
+INFO:root:Windows => Width: 1680, Height: 1050
+INFO:root:Windows => Width: 1680, Height: 1050
