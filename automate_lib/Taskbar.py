@@ -54,7 +54,7 @@ class LibreOffice():
 
     def write_letters(self):
         """
-        Random write the letters in wordpad.
+        Random write the letters in word pad.
         :return: 
         """
         print('write letters')
