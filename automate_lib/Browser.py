@@ -377,7 +377,8 @@ class Browse():
         random_repeat = random.randint(3, repeat)
 
         for i in range(random_repeat):
-            self.browsing(random.choice(self.urls))
+            # self.browsing(random.choice(self.urls))
+            self.browsing("www.homestead.com")
             time.sleep(5)
             self.limit_repeat = 0
             self.browse_populate_site()
@@ -415,9 +416,9 @@ class Browse():
             print('page_start: {}, page_end: {}'.format(self.page_start, self.page_end))
             # print('link_elements Length: {}, link_elements: {}'.format(len(link_elements), link_elements))
 
-            self.scroll_page(page_start_count=pageScroll_count)
+            self.scroll_page(page_start_count=pageScroll_count + 1)
             time.sleep(2)
-            self.scroll_page(page_start_count=pageScroll_count, towards="up")
+            self.scroll_page(page_start_count=pageScroll_count + 1, towards="up")
 
             time.sleep(5)
 
@@ -448,7 +449,7 @@ class Browse():
         """
         try:
             # scroll down/up until random scroll given above.
-            self.scroll_destination_page(page_start_count=count)
+            self.scroll_destination_page(page_start_count=count + 1)
             time.sleep(1)
 
             for i in range(0, len(self.Browser_threads)):
@@ -462,12 +463,15 @@ class Browse():
 
             random_element = random.choice(self.current_page_elements)
 
-            while random_element.text.encode('utf-8'):
+            while random_element.text.encode('utf-8') == "":
                 random_element = random.choice(self.current_page_elements)
                 print('random element: {}, {}, {}'.format(random_element.location['x'],
                                                           random_element.location['y'],
                                                           random_element.text.encode('utf-8')))
 
+            print('result random element: {}, {}, {}'.format(random_element.location['x'],
+                                                          random_element.location['y'],
+                                                          random_element.text.encode('utf-8')))
             move_click(self.browser_x + random_element.location['x'], self.browser_y + random_element.location['y'] - self.page_start)
 
             self.limit_repeat += 1
