@@ -33,12 +33,16 @@ class Browse():
         # time.sleep(2)
         self.height = 500
 
-    def browsing(self, random_url):
+    def browsing(self, random_url, count):
         """
         Type url on address bar.
         :param url: 
         :return: 
         """
+        if count % 2 != 0:
+            keyboard.browser_open_tab()
+            time.sleep(2)
+
         keyboard.browser_addressbar()
         keyboard.typewrite(random_url)
         time.sleep(2)
@@ -352,6 +356,7 @@ class Browse():
             for index in range(page_start_count, 0, -1):
                 self.driver.execute_script("window.scrollTo("+ str(index * self.height) + "," + str((index - 1) * self.height) + ");")
                 time.sleep(1)
+
             time.sleep(2)
 
     def scroll_destination_page(self, page_start_count):
@@ -368,7 +373,7 @@ class Browse():
             time.sleep(1)
         time.sleep(2)
 
-    def popular_sites(self, repeat=10):
+    def popular_sites(self, repeat=5):
         """
         Visit popular sites
         :return: 
@@ -377,8 +382,7 @@ class Browse():
         random_repeat = random.randint(3, repeat)
 
         for i in range(random_repeat):
-            # self.browsing(random.choice(self.urls))
-            self.browsing("www.homestead.com")
+            self.browsing(random.choice(self.urls), i)
             time.sleep(5)
             self.limit_repeat = 0
             self.browse_populate_site()

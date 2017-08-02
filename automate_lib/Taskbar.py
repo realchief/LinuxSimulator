@@ -82,7 +82,7 @@ class LibreOffice():
 
         keyboard.hotkey('CTRL', 's')
         time.sleep(3)
-        filename = 'test-' + str(datetime.now().strftime('%Y-%m-%d-%H-%M-%S'))
+        filename = 'test-' + str(datetime.now().strftime('%Y*-%m-%d-%H-%M-%S'))
         keyboard.typewrite(filename)
         time.sleep(2)
         keyboard.hotkey('ENTER')
