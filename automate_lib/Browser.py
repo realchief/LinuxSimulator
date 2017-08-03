@@ -191,6 +191,7 @@ class Browse():
             logging.info('Browser read_spam function => Got Error: {}'.format(e))
 
     def read_trash(self):
+
         try:
             trash = self.driver.find_element_by_xpath("//section[@id='pm_sidebar']//li[@data-key='trash']")
             trash_location = trash.location
@@ -199,6 +200,7 @@ class Browse():
 
             move_click(self.browser_x + trash_location['x'], self.browser_y + trash_location['y'])
             self.read_conversation_items()
+
         except Exception as e:
             print('Browser read_trash function => Got Error: {}'.format(e))
             logging.info('Browser read_trash function => Got Error: {}'.format(e))
@@ -365,7 +367,6 @@ class Browse():
         :param page_start_count: 
         :return: 
         """
-
         for index in range(1, page_start_count):
 
             self.driver.execute_script(
@@ -373,16 +374,23 @@ class Browse():
             time.sleep(1)
         time.sleep(2)
 
-    def popular_sites(self, repeat=5):
+    def popular_sites(self, repeat=7):
         """
         Visit popular sites
         :return: 
         """
-
         random_repeat = random.randint(3, repeat)
 
         for i in range(random_repeat):
             self.browsing(random.choice(self.urls), i)
+            if i >= 2:
+                j = random.randint(0, i)
+                for z in range(j):
+                    keyboard.browser_switch_tab()
+                    time.sleep(3)
+                    scroll_mouse(count=random.randint(0, 5), sensivity=random.choice([-10, 10]), pause=1.5)
+                    time.sleep(1)
+
             time.sleep(5)
             self.limit_repeat = 0
             self.browse_populate_site()
@@ -395,7 +403,7 @@ class Browse():
         try:
             self.current_page_elements = []
             # return if repeat three times in one page.
-            if self.limit_repeat > 3:
+            if self.limit_repeat >= 3:
                 return
             time.sleep(5)
             body_element = WebDriverWait(self.driver, 30).until(EC.presence_of_element_located((By.TAG_NAME, "body")))
@@ -456,8 +464,8 @@ class Browse():
             self.scroll_destination_page(page_start_count=count + 1)
             time.sleep(1)
 
-            for i in range(0, len(self.Browser_threads)):
-                self.Browser_threads[i].join()
+            # for i in range(0, len(self.Browser_threads)):
+            #     self.Browser_threads[i].join()
 
             self.get_current_page_link_elements(link_elements)
 
