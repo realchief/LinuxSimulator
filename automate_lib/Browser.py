@@ -119,6 +119,7 @@ class Browse():
 
             move_click(self.browser_x + inbox_location['x'], self.browser_y + inbox_location['y'])
             self.read_conversation_items()
+
         except Exception as e:
             print("Browser read_inbox got error: {}".format(e))
             logging.info("Browser read_inbox => Got error: {}\n".format(e))
@@ -346,8 +347,7 @@ class Browse():
         :param amount: 
         :return: 
         """
-        self.driver.execute_script(
-            "window.scrollTo(0, 0);")
+        self.driver.execute_script("window.scrollTo(0, 0);")
 
         if towards == "down":
             for index in range(0, page_start_count):

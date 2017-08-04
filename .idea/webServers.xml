@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="1542aea9-d74a-4c26-9973-12639804593f" name="ubuntu" url="http://54.67.82.81">
+        <fileTransfer host="54.67.82.81" port="22" privateKey="D:\Projects\07-simulator\workspace\KEY_FILES\linuxkey.pem" rootFolder="/home/ubuntu" accessType="SFTP" keyPair="true">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
