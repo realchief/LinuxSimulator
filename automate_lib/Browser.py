@@ -275,6 +275,7 @@ class Browse():
             logging.info('Browser Google Button => Got Error: {}'.format(e))
 
     def google_entry(self):
+
         try:
             if self.RANDOM_BROWSE_COUNT == 0:
                 self.browsing('https://google.com')
@@ -294,6 +295,7 @@ class Browse():
             keyboard.typewrite(random.choice(Random_Keyword))
             self.google_button()
             self.search_google()
+
         except Exception as e:
             logging.info('Browser Google Entry Function => Got Error: {}'.format(e))
 
