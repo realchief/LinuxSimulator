@@ -88,7 +88,7 @@ This simulation script is working on Ubuntu.
     
 - Step 4
 
-    If you’re on Windows, download Tight-VNC to install VNC. Connect to localhost::5902 and use the password you gave above. 
+    If you’re on Windows, download Tight-VNC to install VNC. Connect to <Ip Address>::5901 and use the password you gave above. 
     You should now see your new shiny Ubuntu desktop.
     
     
