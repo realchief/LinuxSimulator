@@ -1,3 +1,5 @@
+
+
 #!/usr/bin/python
 
 
@@ -45,11 +47,12 @@ class LibreOffice():
         Start libreoffice application
         :return: 
         """
+        time.sleep(3)
         keyboard.typewrite('libreoffice')
         time.sleep(2)
         keyboard.hotkey('ENTER')
         time.sleep(3)
-        keyboard.hotkey('ALT', 'D')
+        keyboard.hotkey('ALT', 'w')
         time.sleep(3)
 
     def write_letters(self):

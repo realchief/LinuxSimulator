@@ -122,7 +122,7 @@ class Browse():
 
         except Exception as e:
             print("Browser read_inbox got error: {}".format(e))
-            logging.info("Browser read_inbox => Got error: {}\n".format(e))
+            logging.info("Browser read_inbox => Go t error: {}\n".format(e))
 
     def read_drafts(self):
 
@@ -166,6 +166,7 @@ class Browse():
             logging.info('Browser read_starred function => Got Error: {}'.format(e))
 
     def read_archive(self):
+
         try:
             archive = self.driver.find_element_by_xpath("//section[@id='pm_sidebar']//li[@data-key='archive']")
             archive_location = archive.location
@@ -174,6 +175,7 @@ class Browse():
 
             move_click(self.browser_x + archive_location['x'], self.browser_y + archive_location['y'])
             self.read_conversation_items()
+
         except Exception as e:
             print('Browser read_archive function => Got Error: {}'.format(e))
             logging.info('Browser read_archive function => Got Error: {}'.format(e))
@@ -275,7 +277,6 @@ class Browse():
             logging.info('Browser Google Button => Got Error: {}'.format(e))
 
     def google_entry(self):
-
         try:
             if self.RANDOM_BROWSE_COUNT == 0:
                 self.browsing('https://google.com')
@@ -340,7 +341,6 @@ class Browse():
         keyboard.backward()
         time.sleep(1)
 
-        time.sleep(1)
         self.google_entry()
 
     def scroll_page(self, page_start_count, towards="down"):
@@ -353,14 +353,13 @@ class Browse():
 
         if towards == "down":
             for index in range(0, page_start_count):
-                self.driver.execute_script("window.scrollTo("+ str((index -1) * self.height) + "," + str(index * self.height) + ");")
+                self.driver.execute_script("window.scrollTo(" + str((index -1) * self.height) + "," + str(index * self.height) + ");")
                 time.sleep(1)
             time.sleep(2)
         else:
             for index in range(page_start_count, 0, -1):
-                self.driver.execute_script("window.scrollTo("+ str(index * self.height) + "," + str((index - 1) * self.height) + ");")
+                self.driver.execute_script("window.scrollTo(" + str(index * self.height) + "," + str((index - 1) * self.height) + ");")
                 time.sleep(1)
-
             time.sleep(2)
 
     def scroll_destination_page(self, page_start_count):
@@ -428,14 +427,11 @@ class Browse():
             self.page_end = self.height * (count + 1)
 
             print('page_start: {}, page_end: {}'.format(self.page_start, self.page_end))
-            # print('link_elements Length: {}, link_elements: {}'.format(len(link_elements), link_elements))
 
             self.scroll_page(page_start_count=pageScroll_count + 1)
             time.sleep(2)
             self.scroll_page(page_start_count=pageScroll_count + 1, towards="up")
-
             time.sleep(5)
-
             self.browse_link_element(link_elements=link_elements, count=count)
 
         except Exception as e:

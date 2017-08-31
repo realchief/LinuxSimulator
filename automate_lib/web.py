@@ -1,6 +1,5 @@
 #!/usr/bin/python
 
-
 import webbrowser
 from random import choice
 import random
@@ -29,8 +28,10 @@ def scrapy_content_newsurl():
 
         try_count = 0
         while True:
+
             if try_count > len(article_urls):
                 scrapy_content_newsurl()
+
             else:
                 url = article_urls[random.randint(0, len(article_urls)-1)]
                 a = Article(url)
