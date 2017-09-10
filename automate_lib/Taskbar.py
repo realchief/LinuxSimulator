@@ -11,8 +11,6 @@ from datetime import datetime
 import logging
 from winlaunch import *
 
-logging.basicConfig(level=logging.INFO, filename='auto-simulator.txt')
-
 
 def write_letters():
     """
@@ -20,7 +18,6 @@ def write_letters():
     :return: 
     """
     print('write letters')
-    logging.info("Office Write_letters function => write letters.\n")
 
     time.sleep(3)
     scrapy_content_newsurl()
@@ -61,7 +58,6 @@ class LibreOffice():
         :return: 
         """
         print('write letters')
-        logging.info("Office Write_letters function => write letters.\n")
 
         time.sleep(3)
         scrapy_content_newsurl()

@@ -7,11 +7,8 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as EC
 import os
-import logging
 import threading
 from winlaunch import *
-
-logging.basicConfig(level=logging.INFO, filename='auto-simulator.txt')
 
 
 class Browse():
@@ -85,7 +82,6 @@ class Browse():
 
         except Exception as e:
             print("Browser Login function => Got Error: {}".format(e))
-            logging.info("Browser Login function => Got Error: {}\n".format(e))
             self.close_borwser()
 
     def read_conversation_items(self):
@@ -107,7 +103,6 @@ class Browse():
             print('==================================\n')
         except Exception as e:
             print("Browser read_conversation_items => Got Error: {}".format(e))
-            logging.info("Browser read_conversation_items => Got Error: {}\n".format(e))
 
     def read_inbox(self):
 
@@ -115,14 +110,12 @@ class Browse():
             inbox = self.driver.find_element_by_xpath("//section[@id='pm_sidebar']//li[@data-key='inbox']")
             inbox_location = inbox.location
             print('Inbox location: {}'.format(inbox_location))
-            logging.info('Browser read_inbox function => Inbox location: {}\n'.format(inbox_location))
 
             move_click(self.browser_x + inbox_location['x'], self.browser_y + inbox_location['y'])
             self.read_conversation_items()
 
         except Exception as e:
             print("Browser read_inbox got error: {}".format(e))
-            logging.info("Browser read_inbox => Go t error: {}\n".format(e))
 
     def read_drafts(self):
 
@@ -130,40 +123,34 @@ class Browse():
             drafts = self.driver.find_element_by_xpath("//section[@id='pm_sidebar']//li[@data-key='drafts']")
             drafts_location = drafts.location
             print('Browser read_drafts function => drafts location: {}'.format(drafts_location))
-            logging.info('Browser read_drafts function => drafts location: {}\n'.format(drafts_location))
 
             move_click(self.browser_x + drafts_location['x'], self.browser_y + drafts_location['y'])
 
             self.read_conversation_items()
         except Exception as e:
             print('Browser read_drafts function got Error: {}'.format(e))
-            logging.info('Browser read_drafts function => Got Error: {}\n'.format(e))
 
     def read_sent(self):
         try:
             sent = self.driver.find_element_by_xpath("//section[@id='pm_sidebar']//li[@data-key='sent']")
             sent_location = sent.location
             print('Browser read_sent Function => sent location: {}'.format(sent_location))
-            logging.info('Browser read_sent Function => sent location: {}\n'.format(sent_location))
 
             move_click(self.browser_x + sent_location['x'], self.browser_y + sent_location['y'])
             self.read_conversation_items()
         except Exception as e:
             print('Browser read_sent Function => Got Error: {}'.format(e))
-            logging.info('Browser read_sent Function => Got Error: {}\n'.format(e))
 
     def read_starred(self):
         try:
             starred = self.driver.find_element_by_xpath("//section[@id='pm_sidebar']//li[@data-key='starred']")
             starred_location = starred.location
             print('Browser read_starred function => starred location: {}'.format(starred_location))
-            logging.info('Browser read_starred function => starred location: {}'.format(starred_location))
 
             move_click(self.browser_x + starred_location['x'], self.browser_y + starred_location['y'])
             self.read_conversation_items()
         except Exception as e:
             print('Browser read_starred function => Got Error: {}'.format(e))
-            logging.info('Browser read_starred function => Got Error: {}'.format(e))
 
     def read_archive(self):
 
@@ -171,27 +158,23 @@ class Browse():
             archive = self.driver.find_element_by_xpath("//section[@id='pm_sidebar']//li[@data-key='archive']")
             archive_location = archive.location
             print('archive location: {}'.format(archive_location))
-            logging.info('Browser read_archive function => archive location: {}'.format(archive_location))
 
             move_click(self.browser_x + archive_location['x'], self.browser_y + archive_location['y'])
             self.read_conversation_items()
 
         except Exception as e:
             print('Browser read_archive function => Got Error: {}'.format(e))
-            logging.info('Browser read_archive function => Got Error: {}'.format(e))
 
     def read_spam(self):
         try:
             spam = self.driver.find_element_by_xpath("//section[@id='pm_sidebar']//li[@data-key='spam']")
             spam_location = spam.location
             print('Browser read_spam function => spam location: {}'.format(spam_location))
-            logging.info('Browser read_spam function => spam location: {}'.format(spam_location))
 
             move_click(self.browser_x + spam_location['x'], self.browser_y + spam_location['y'])
             self.read_conversation_items()
         except Exception as e:
             print('Browser read_spam function => Got Error: {}'.format(e))
-            logging.info('Browser read_spam function => Got Error: {}'.format(e))
 
     def read_trash(self):
 
@@ -199,14 +182,12 @@ class Browse():
             trash = self.driver.find_element_by_xpath("//section[@id='pm_sidebar']//li[@data-key='trash']")
             trash_location = trash.location
             print('Browser read_trash function => Trash location: {}'.format(trash_location))
-            logging.info('Browser read_trash function => Trash location: {}'.format(trash_location))
 
             move_click(self.browser_x + trash_location['x'], self.browser_y + trash_location['y'])
             self.read_conversation_items()
 
         except Exception as e:
             print('Browser read_trash function => Got Error: {}'.format(e))
-            logging.info('Browser read_trash function => Got Error: {}'.format(e))
 
     def compose_mail(self):
         try:
@@ -244,7 +225,7 @@ class Browse():
             time.sleep(5)
 
         except Exception as e:
-            logging.info('Browser compose_mail function => Got Error: {}'.format(e))
+            print('Browser compose_mail function => Got Error: {}'.format(e))
 
     def close_borwser(self):
         self.driver.quit()
@@ -265,7 +246,7 @@ class Browse():
                                self.browser_y + logout_button.location['y'])
 
         except Exception as e:
-            logging.info('Browser logout Function => Got Error: {}'.format(e))
+            print('Browser logout Function => Got Error: {}'.format(e))
 
     def google_button(self):
         try:
@@ -274,7 +255,7 @@ class Browse():
             move_click(self.browser_x + button.location['x'], self.browser_y + button.location['y'])
 
         except Exception as e:
-            logging.info('Browser Google Button => Got Error: {}'.format(e))
+            print('Browser Google Button => Got Error: {}'.format(e))
 
     def google_entry(self):
         try:
@@ -298,7 +279,7 @@ class Browse():
             self.search_google()
 
         except Exception as e:
-            logging.info('Browser Google Entry Function => Got Error: {}'.format(e))
+            print('Browser Google Entry Function => Got Error: {}'.format(e))
 
     def search_google(self):
 
@@ -307,7 +288,6 @@ class Browse():
                 EC.presence_of_element_located((By.XPATH, "//div[@id='rso']")))
             items = self.driver.find_elements_by_xpath("//div[@id='rso']//div[@class='g']")
             print('items: {}'.format(items))
-            logging.info('Browser search google Function => Items: {}'.format(items))
 
             for index, item in enumerate(items):
                 print(index, item)
@@ -330,7 +310,7 @@ class Browse():
             if self.RANDOM_BROWSE_COUNT <= 5:
                 self.random_browsing()
         except Exception as e:
-            logging.info('Browser search google Function => Got Errors: {}'.format(e))
+            print('Browser search google Function => Got Errors: {}'.format(e))
 
     def random_browsing(self):
         """
@@ -384,6 +364,8 @@ class Browse():
 
         for i in range(random_repeat):
             self.browsing(random.choice(self.urls), i)
+            time.sleep(3)
+
             if i >= 2:
                 j = random.randint(0, i)
                 for z in range(j):
@@ -391,6 +373,8 @@ class Browse():
                     time.sleep(3)
                     scroll_mouse(count=random.randint(0, 5), sensivity=random.choice([-10, 10]), pause=1.5)
                     time.sleep(1)
+
+                keyboard.browser_switch_tab()
 
             time.sleep(5)
             self.limit_repeat = 0
@@ -426,7 +410,7 @@ class Browse():
             self.page_start = self.height * count
             self.page_end = self.height * (count + 1)
 
-            print('page_start: {}, page_end: {}'.format(self.page_start, self.page_end))
+            # print('page_start: {}, page_end: {}'.format(self.page_start, self.page_end))
 
             self.scroll_page(page_start_count=pageScroll_count + 1)
             time.sleep(2)
@@ -490,7 +474,6 @@ class Browse():
 
         except Exception as e:
             print('Browser browse_link_element function => Got Error: {}'.format(e))
-            logging.info('Browser browse_link_element function => Got Error: {}'.format(e))
             return
 
 

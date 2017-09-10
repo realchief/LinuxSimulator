@@ -6,14 +6,13 @@ from keyboard import *
 import pyautogui
 import random
 import time, csv, os
-import logging
+# import logging
 
 
-logging.basicConfig(level=logging.INFO, filename='auto-simulator.txt')
+# logging.basicConfig(level=logging.INFO, filename='auto-simulator.txt')
 
 screenWidth, screenHeight = pyautogui.size()
 print('Width: {}, Height: {}'.format(screenWidth, screenHeight))
-logging.info('Windows => Width: {}, Height: {}'.format(screenWidth, screenHeight))
 stop_timea = 0.1
 stop_timeb = 2
 
@@ -90,7 +89,7 @@ def scroll_mouse(count=1, sensivity=200, pause=0.5, sleep_time=.5):
         try:
             # time.sleep(random.uniform(stop_timea, stop_timeb))
             print("scrolling: {} times".format(i))
-            logging.info("scrolling: {} times\n".format(i))
+
             pyautogui.scroll(sensivity, pause=pause)
             time.sleep(sleep_time)
         except Exception as e:
@@ -156,14 +155,14 @@ def search_app():
 def parse_csv():
     urls = []
     try:
-        with open(os.path.abspath('urls.csv'), 'rb') as f:
+        with open(os.path.abspath('testurl.csv'), 'rb') as f:
             reader = csv.reader(f)
             for row in reader:
                 urls.append(row[1])
     except Exception as e:
         print('parse_csv Function => Got Error: {}'.format(e))
 
-        with open(os.path.abspath('urls.csv'), 'rb') as f:
+        with open('/home/ubuntu/workspace_ubuntu/automate_lib/testurl.csv', 'rb') as f:
             reader = csv.reader(f)
             for row in reader:
                 urls.append(row[1])

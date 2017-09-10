@@ -1,3 +1,4 @@
+
 # Simulate-user-Activity-ubuntu
 This simulation script is working on Ubuntu.
 
@@ -96,6 +97,15 @@ This simulation script is working on Ubuntu.
 
     Copy source code folder *workspace_ubuntu* to /home/ubunut/workspace_ubuntu on instance.
     
+    
+- Step 6    
+    
+    Ths will be running the python script at startup on terminal.
+    
+    ```
+    gnome-terminal -e "python /home/ubuntu/workspace_ubuntu/simulate_ubuntu.py"
+    
+    ```
     
 # Note
 

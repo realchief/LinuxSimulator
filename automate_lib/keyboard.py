@@ -9,8 +9,6 @@ import time
 from const import *
 import logging
 
-logging.basicConfig(level=logging.INFO, filename='auto-simulator.txt')
-
 stop_intervala = 0.007
 stop_intervalb = 0.2
 pyautogui.FAILSAFE = False
@@ -86,7 +84,6 @@ class Keyboard():
 
             except Exception as e:
                 print('Exception For Typewriter: {}'.format(e))
-                logging.info('Exception For Typewriter: {}'.format(e))
 
         time.sleep(.2)
 
