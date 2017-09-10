@@ -39,6 +39,7 @@ class Browse():
         """
         if count % 2 != 0:
             keyboard.browser_open_tab()
+            self.opened_tabs += 1
             time.sleep(2)
 
         keyboard.browser_addressbar()
@@ -494,7 +495,8 @@ class Browse():
     #         print('result random element: {}, {}, {}'.format(random_element.location['x'],
     #                                                       random_element.location['y'],
     #                                                       random_element.text.encode('utf-8')))
-    #         move_click(self.browser_x + random_element.location['x'], self.browser_y + random_element.location['y'] - self.page_start)
+    #         move_click(self.browser_x + random_element.location['x'], self.browser_y +
+            # random_element.location['y'] - self.page_start)
     #
     #         self.limit_repeat += 1
     #         time.sleep(5)
