@@ -39,7 +39,7 @@ class LibreOffice():
     def _init__(self):
         print('LibreOffice')
 
-    def start_office(self):
+    def start(self):
         """
         Start libreoffice application
         :return: 
@@ -95,6 +95,6 @@ if __name__ == '__main__':
 
     time.sleep(3)
     search_app()
-    libreoffice.start_office()
+    libreoffice.start()
     libreoffice.write_letters()
     libreoffice.close_save()
