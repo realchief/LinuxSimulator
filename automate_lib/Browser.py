@@ -421,13 +421,13 @@ class Browse():
             self.scroll_page(page_start_count=pageScroll_count + 1, towards="up")
             time.sleep(5)
             # self.browse_link_element(link_elements=link_elements, count=count)
-            self.browse_random_element(link_elements=link_elements, last_height=last_height)
+            self.browse_random_element(link_elements=link_elements)
 
         except Exception as e:
             print('Browser popular sites Function => Got Error: {}'.format(e))
             return
 
-    def browse_random_element(self, link_elements, last_height):
+    def browse_random_element(self, link_elements):
         """
         Get Random Element from current page.
         :param link_elements: 
