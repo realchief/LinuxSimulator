@@ -76,7 +76,7 @@ This simulation script is working on Ubuntu.
         gnome-settings-daemon &
         metacity &
         nautilus &
-        gnome-terminal &
+        gnome-terminal -e "python /home/ubuntu/workspace_ubuntu/simulate_ubuntu.py"
     ```
     
     * Kill and restart the VNC server to apply the settings. This needs to happen each time the VNC / X-Windows configuration is updated.
