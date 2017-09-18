@@ -367,8 +367,8 @@ class Browse():
             self.browsing(random.choice(self.urls), i)
             time.sleep(3)
 
-            if self.opened_tabs >= 2:
-                keyboard.browser_switch_tab(count=random.randint(0, self.opened_tabs))
+            # if self.opened_tabs >= 2:
+            #     keyboard.browser_switch_tab(count=random.randint(0, self.opened_tabs))
 
             time.sleep(5)
             self.limit_repeat = 0

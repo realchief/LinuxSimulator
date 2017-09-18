@@ -45,6 +45,8 @@ class LibreOffice():
         :return: 
         """
         time.sleep(3)
+        search_app()
+        time.sleep(3)
         keyboard.typewrite('libreoffice')
         time.sleep(2)
         keyboard.hotkey('ENTER')
