@@ -42,6 +42,7 @@ class Browse():
             self.opened_tabs += 1
             time.sleep(2)
 
+        self.driver.switch_to.window(self.driver.window_handles[-1])
         keyboard.browser_addressbar()
         keyboard.typewrite(random_url)
         time.sleep(2)
@@ -375,7 +376,9 @@ class Browse():
 
         # close browser tabs
         while self.opened_tabs >= 1:
-            keyboard.browser_switch_tab(count=random.randint(0, self.opened_tabs))
+            tab_index = random.randint(0, self.opened_tabs-1)
+            keyboard.browser_switch_tab(count=tab_index)
+            self.driver.switch_to.window(self.driver.window_handles[tab_index])
             random.choice([self.close_tab, self.browse_populate_site])()
 
     def close_tab(self):
