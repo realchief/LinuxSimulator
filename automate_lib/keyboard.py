@@ -3,6 +3,8 @@
 
 from __future__ import print_function
 from baseFunctions import *
+import subprocess
+import sys
 import pyautogui
 import random
 import time
@@ -87,6 +89,16 @@ class Keyboard():
 
         time.sleep(.2)
 
+    def type_multilanguage(self, text):
+        
+        # open the textfile
+        text = text.strip()
+        for ch in text:
+            # type out the text
+            subprocess.call(["xdotool", "type", ch])
+            # increase or decrease the time below to type slower or faster
+            time.sleep(0.1)
+
     def typemail(self, word):
         """
         Type login and username in Form
@@ -140,6 +152,7 @@ class Keyboard():
         get address bar
         :return: 
         """
+        
         pyautogui.hotkey('ALT', 'd')
         time.sleep(2)
 

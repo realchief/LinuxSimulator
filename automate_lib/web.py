@@ -12,6 +12,7 @@ news_urls = [
     'http://www.bild.de/',
     'http://www.thesun.co.uk/',
     'https://www.nytimes.com/',
+    'http://cnn.com',
 ]
 
 
@@ -34,12 +35,12 @@ def scrapy_content_newsurl():
 
             else:
                 url = article_urls[random.randint(0, len(article_urls)-1)]
-                a = Article(url)
+                a = Article(url, language='zh')
                 a.download()
                 a.parse()
                 print('a: {}'.format(a))
                 print('Authors: {}'.format(a.authors))
-
+                keyboard.type_multilanguage(a.text)
                 text = (a.text).encode('utf-8')
                 if text.decode('utf-8') == "":
                     continue
