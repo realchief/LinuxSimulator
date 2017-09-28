@@ -155,14 +155,14 @@ def search_app():
 def parse_csv():
     urls = []
     try:
-        with open(os.path.abspath('testurl.csv'), 'rb') as f:
+        with open(os.path.abspath('testurl.csv'), 'r') as f:
             reader = csv.reader(f)
             for row in reader:
                 urls.append(row[1])
     except Exception as e:
         print('parse_csv Function => Got Error: {}'.format(e))
 
-        with open('/home/ubuntu/workspace_ubuntu/automate_lib/testurl.csv', 'rb') as f:
+        with open('/home/ubuntu/workspace_ubuntu/automate_lib/testurl.csv', 'r') as f:
             reader = csv.reader(f)
             for row in reader:
                 urls.append(row[1])

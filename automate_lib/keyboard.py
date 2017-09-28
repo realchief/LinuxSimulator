@@ -89,13 +89,13 @@ class Keyboard():
 
         time.sleep(.2)
 
-    def type_multilanguage(self, text):
+    def type_nonEnglish(self, text, space=None):
         
         # open the textfile
         text = text.strip()
         for ch in text:
             # type out the text
-            subprocess.call(["xdotool", "type", ch])
+            subprocess.call(["xdotool", "getwindowfocus", "windowfocus", "--sync", "type", ch])
             # increase or decrease the time below to type slower or faster
             time.sleep(0.1)
 
@@ -224,3 +224,6 @@ class Keyboard():
         time.sleep(1)
 
 keyboard = Keyboard()
+
+if __name__ == '__main__':
+    keyboard.type_nonEnglish('hello world')
