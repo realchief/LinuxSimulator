@@ -89,72 +89,7 @@ class Keyboard():
 
         time.sleep(.2)
 
-    def type_nonEnglish(self, text, space=None):
-        
-        # open the textfile
-        text = text.strip()
-        for ch in text:
-            # type out the text
-            subprocess.call(["xdotool", "getwindowfocus", "windowfocus", "--sync", "type", ch])
-            # increase or decrease the time below to type slower or faster
-            time.sleep(0.1)
 
-    def typemail(self, word):
-        """
-        Type login and username in Form
-        :param text: 
-        :return: 
-        """
-        interval = random.uniform(0.1, 0.5)
-        pyautogui.typewrite(word, interval=interval)
-
-    def get_backspace_count(self, length):
-        """
-        Get backspace count for delete letter.
-        :param length: 
-        :return:  
-        """
-        refine_count.append(random.randint(0, length))
-        del_count = random.choice(refine_count)
-        refine_count.pop(-1)
-
-        return del_count
-
-    def keydown(self, key):
-        """
-        Down key
-        :param key: 
-        :return: 
-        """
-        pyautogui.keyDown(key)
-
-    def keyup(self, key):
-        """
-        Release key
-        :param key: 
-        :return: 
-        """
-        pyautogui.keyUp(key)
-
-    def keypress(self, keys):
-        """
-        Press key
-        :param keys: 
-        :return: 
-        """
-        pyautogui.press(keys)
-
-    def hotkey(self, *args):
-        pyautogui.hotkey(*args)
-
-    def browser_addressbar(self):
-        """
-        get address bar
-        :return: 
-        """
-        
-        pyautogui.hotkey('ALT', 'd')
-        time.sleep(2)
 
     def minimize(self):
         """
