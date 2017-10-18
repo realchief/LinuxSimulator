@@ -38,28 +38,7 @@ def scrapy_content_newsurl():
                     a = Article(url, language=news_url['lg'])
                 else:
                     a = Article(url)
-                a.download()
-                a.parse()
-                a_lang = a.meta_lang
-                text = a.text
-                
-                print('length: {}'.format(len(text)))
-                print('Text: {}'.format(text))
-                print('language: {}'.format(a_lang))
-                if len(text) != 0:
-                    
-                    if news_url['lg'] == 'zh':
-                        keyboard.type_nonEnglish(text, space=True)
-                        break
-                    elif news_url['lg'] == 'en':
-                        keyboard.typewrite(text)
-                        break
-                    else:
-                        keyboard.type_nonEnglish(text)
-                        break
-                else:
-                    try_count += 1
-                    continue
+
     
     except Exception as e:
         print('Exception: {}'.format(e))
