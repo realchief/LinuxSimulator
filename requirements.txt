@@ -8,7 +8,7 @@ checkbox-support==0.22
 cloud-init==0.7.9
 command-not-found==0.3
 configobj==5.0.6
-cryptography==1.2.3
+cryptography==3.2
 cssselect==1.0.1
 defer==1.0.6
 feedfinder2==0.0.4
